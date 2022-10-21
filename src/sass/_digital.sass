@@ -1,0 +1,123 @@
+.digital
+  padding: 30px
+  text-align: center
+  min-height: 833px
+  .row
+    flex-direction: column
+    align-items: center
+  &__text
+    // font-size: 30px
+    font-size: calc(var(--index) * 2.5)
+    font-weight: 700
+    line-height: 120%
+    color: $typography
+    padding-bottom: 60px
+    margin: 0
+    span
+      color: $orange
+  &__item
+    width: 100%
+    margin-bottom: 15px
+    min-height: 487px
+    padding: 40px 32px
+    &-1
+      background: url(../img/Rectangle_1.png) center (center / cover) no-repeat
+    &-2
+      background: url(../img/Rectangle_2.png) center (center / cover) no-repeat
+    &-3
+      background: url(../img/Rectangle_3.png) center (center / cover) no-repeat
+  &__title
+    // font-size: 15px
+    font-size: calc(var(--index)*0.7)
+    font-weight: 700
+    line-height: 140%
+    text-transform: uppercase
+    color: $white
+    padding-bottom: var(--index)
+  &__subtitle
+    &-1
+      font-weight: 500
+      // font-size: 16px
+      font-size: calc(var(--index)*0.6)
+      line-height: 140%
+      color: $white
+      padding-bottom: var(--index)
+
+    &-2
+      font-weight: 500
+      // font-size: 14px
+      font-size: calc(var(--index)*0.5)
+      line-height: 140%
+      color: $white
+      opacity: 0.5
+      padding-bottom: var(--index)
+    &-3
+      font-weight: 500
+      // font-size: 16px
+      font-size: calc(var(--index)*0.6)
+      line-height: 140%
+      color: $white
+      padding-bottom: var(--index)
+  &__btn
+    width: 100%
+    height: 52px
+    border: 1px solid $orange
+    border-radius: 100px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    color: $orange
+    background: none
+    +btn_hover
+  .divider
+    height: 1px
+    background: $white
+    opacity: 0.2
+    margin-bottom: var(--index)
+
+@media (min-width: 992px)
+  .digital
+    min-height: auto
+    .row
+      flex-direction: row
+      justify-content: center
+    &__item
+      padding: 15px 15px
+      height: 489px
+
+@media (min-width: 1200px)
+  .digital
+    min-height: 833px
+    padding: 120px 200px
+
+@media (min-width: 1400px)
+  .digital
+    &__text
+      font-size: 38px
+    &__item
+      width: 340px
+      height: 530px
+      padding: 20px 30px
+
+@media (min-width: 1500px)
+  .digital
+    &__item
+      width: 360px
+      height: 487px
+      padding: 40px 32px
+      margin-left: 18%
+    &__title
+      font-size: 18px
+      padding-bottom: 28px
+
+    &__subtitle
+      &-1
+        font-size: 16px
+        padding-bottom: 20px
+      &-2
+        font-size: 14px
+        padding-bottom: 28px
+      &-3
+        font-size: 16px
+        padding-bottom: 36px

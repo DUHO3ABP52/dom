@@ -1,0 +1,80 @@
+.form
+  padding: 30px
+  text-align: center
+  width: 100%
+  min-height: auto
+  min-height: 789px
+  background: url('../img/photo_2.png') center (center / cover) no-repeat
+  &__title
+    font-size: 30px
+    font-weight: 700
+    font-size: 38px
+    line-height: 120%
+    text-align: center
+    color: $white
+    padding-bottom: 40px
+  &__subtitle
+    margin-bottom: 20px
+    font-weight: 500
+    font-size: 16px
+    line-height: 140%
+    text-align: center
+    color: $white
+  &__form
+    padding: 15px
+    display: flex
+    flex-direction: column
+    max-width: 630px
+    height: 357px
+    background: $white
+    margin: 0 auto
+  .input
+    height: 100%
+    width: 100%
+    border: none
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5)
+    outline: none
+  &__input
+    height: 55px
+    margin: auto
+    width: 300px
+  &__check
+    font-size: 10px
+    padding: 26px 0 40px 0
+    color: $typography
+  &__btn
+    width: 100%
+    height: 62px
+    background: $orange
+    border-radius: 100px
+    border: none
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    color: $white
+    &:hover
+      background: none
+      color: $orange
+      transition: 0.7s
+      border: 1px solid $orange
+
+@media (min-width: 768px)
+  .form
+    &__check
+      font-size: 12px
+
+@media (min-width: 992px)
+  .form
+    padding: 120px 280px
+    &__title
+      font-size: 38px
+    &__subtitle
+      padding-bottom: 40px
+    &__form
+      padding: 25px 60px
+    &__input
+      width: 100%
+      margin: 0
+    &__btn
+      width: 250px
+

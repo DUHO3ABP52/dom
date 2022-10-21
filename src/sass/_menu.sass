@@ -1,0 +1,40 @@
+.menu
+  display: none
+  justify-content: space-between
+  margin: 0
+  padding: 0
+  list-style: none
+  &__link
+    font-weight: 500
+    font-size: 14px
+    color: $typography
+    text-decoration: none
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    +a_hover
+  &__item
+    padding-right: 23px
+
+@media (min-width: 992px)
+  .menu
+    display: flex
+    justify-content: space-around
+    &__link
+      font-size: 9px
+
+@media (min-width: 1200px)
+  .menu
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+
+    &__link
+      font-weight: 500
+      font-size: calc(var(--index)/2.6)
+      color: $typography
+      text-decoration: none
+      letter-spacing: 0.01em
+      text-transform: uppercase
+    &__item
+      padding: 0

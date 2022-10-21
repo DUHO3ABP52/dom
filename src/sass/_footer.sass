@@ -1,0 +1,182 @@
+.footer
+  padding: 30px
+  width: 100%
+  min-height: auto
+  background: $gray
+  p
+    margin: 0
+  &__logo
+    margin: 0 auto
+    margin-bottom: 25px
+    width: 185px
+    height: 48px
+  &__city
+    font-weight: 500
+    font-size: 14px
+    line-height: 170%
+    color: $white
+    opacity: 0.5
+    margin-bottom: 20px
+  &__contact
+    font-weight: 500
+    font-size: 14px
+    color: $white
+    margin-bottom: 12px
+  &__info
+    font-weight: 500
+    font-size: 14px
+    color: $white
+    opacity: 0.5
+    margin-bottom: 28px
+  &__social
+    width: 100%
+    justify-content: center
+    // margin-bottom: 25px
+    display: flex
+    &-link
+      display: flex
+      font-size: 40px
+      justify-content: center
+      align-items: center
+      color: $white
+      margin-right: 20px
+      +a_hover
+  &__title
+    display: none
+    font-weight: 500
+    font-size: 14px
+    line-height: 140%
+    color: $white
+    opacity: 0.5
+    margin-bottom: 24px
+    width: 204px
+    height: 40px
+  &__subtitle
+    display: none
+  &__items
+    list-style: none
+  &__link
+    font-weight: 500
+    font-size: 14px
+    color: $typography
+    text-decoration: none
+    letter-spacing: 0.01em
+    font-weight: 500
+    font-size: 14px
+    line-height: 100%
+    color: $white
+    +a_hover
+  .divider
+    width: 100%
+    height: 1px
+    background: $white
+    opacity: 0.1
+    margin: 40px 0 0 0
+  &__copy
+    display: flex
+    justify-content: space-between
+  &__comp
+    font-size: 6px
+    font-weight: 500
+    color: $white
+    opacity: 0.3
+    padding: 20px 0 16px 0
+
+@media (min-width: 576px)
+  .footer
+    padding: 20px 0 0 0
+    .row
+      display: block
+    &__logo
+      display: none
+    &__city
+      display: none
+    &__contact
+      display: none
+    &__info
+      display: none
+    &__social
+      margin: 0
+    .divider
+      margin: 25px 0 0 0
+
+@media (min-width: 992px)
+  .footer
+    min-height: auto
+    padding: 30px 100px 0 100px
+    text-align: start
+    .row
+      justify-content: space-between
+      display: flex
+    &__logo
+      width: 110px
+      height: 32px
+      margin: 0
+      display: block
+      margin-bottom: 15px
+    &__city
+      display: block
+      margin-bottom: 15px
+      font-size: 12px
+    &__contact
+      display: block
+      margin-bottom: 10px
+      font-size: 8px
+    &__info
+      display: block
+      margin-bottom: 15px
+      font-size: 8px
+    &__social
+      width: 120px
+      justify-content: space-between
+
+    &__title
+      display: block
+      font-size: 10px
+      width: 150px
+      margin-bottom: 10px
+
+    &__subtitle
+      display: block
+      font-size: 8px
+    &__link
+      font-size: 9px
+    &__comp
+      font-size: 12px
+
+@media (min-width: 1200px)
+  .footer
+    padding: 100px 200px 0 200px
+    &__logo
+      width: 185px
+      height: 48px
+      margin-bottom: 57px
+    &__city
+      font-size: 14px
+      margin-bottom: 20px    
+    &__contact
+      margin-bottom: 12px    
+    &__info
+      font-size: 14px
+      margin-bottom: 28px
+    &__title
+      font-weight: 500
+      font-size: 14px
+      line-height: 140%
+      color: $white
+      opacity: 0.5
+      margin-bottom: 24px
+      width: 204px
+      height: 40px    
+    &__items
+      list-style: none   
+    &__link
+      font-size: 14px    
+    .divider
+      width: 100%
+      height: 1px
+      background: $white
+      opacity: 0.1
+      margin: 80px 0 0 0
+    &__comp
+      font-size: 12px

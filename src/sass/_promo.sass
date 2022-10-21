@@ -1,0 +1,69 @@
+.promo
+  width: 100%
+  min-height: auto
+  padding: 30px 30px 0 30px
+  text-align: center
+  background: url(../img/photo.png) center (center / cover) no-repeat
+  &__text
+    font-size: 40px
+    font-weight: 700
+    line-height: 110%
+    color: $white
+    margin: 0 auto
+  &__descr
+    font-weight: 500
+    font-size: 16px
+    line-height: 140%
+    color: $white
+    padding-top: 28px
+    margin: 0 auto
+  &__btn-orange
+    width: 350px
+    height: 62px
+    margin-bottom: 30px
+    background: $orange
+    border: none
+    border-radius: 100px
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    color: $white
+    margin-top: 52px
+    &:hover
+      background: none
+      color: $orange
+      transition: 0.7s
+      border: 1px solid $orange
+  &__btn-white
+    width: 350px
+    margin-bottom: 50px
+    height: 62px
+    background: rgba(255, 255, 255, 0.2)
+    border: 1px solid #FFFFFF
+    border-radius: 100px
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    color: $white
+    +btn_hover
+
+@media (min-width: 576px)
+
+@media (min-width: 992px)
+  .promo
+    min-height: 716px
+    padding: 170px 550px 0 100px
+    text-align: left
+    &__text
+      font-size: 68px
+    &__btn-orange
+      width: 341px
+    &__btn-white
+      width: 341px
+
+@media (min-width: 1200px)
+  .promo
+    padding: 170px 450px 0 200px
+    &__btn-orange
+      width: 362px
+      margin-right: 32px

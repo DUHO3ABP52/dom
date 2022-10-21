@@ -1,0 +1,27 @@
+.hamburger
+  display: block
+  position: absolute
+  right: 15px
+  top: 2%
+  transform: translateY(-50%)
+  width:26px
+  height: 12px
+  span
+    display: block
+    height:2px
+    width:100%
+    background-color: $typography
+    margin-bottom: 3px
+    trasition: 0.5s all
+    &_active
+      span
+        margin-bottom: -2px
+        &:nth-child(1)
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(3)
+          transform: translateY(3px) rotate(45deg)
+        &:nth-child(2)
+          display: none
+  @media (min-width: 992px)
+    .hamburger
+    display: none
